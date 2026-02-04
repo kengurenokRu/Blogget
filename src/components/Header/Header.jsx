@@ -4,6 +4,7 @@ import Layout from '../Layout'
 import Logo from './Logo';
 import Search from './Search';
 import Auth from './Auth';
+import Heading from './Heading';
 
 const styleTitle = {
   order: '1',
@@ -18,9 +19,9 @@ export const Header = props => {
       <Layout>
         <div className={style.gridContainer}>
           <Logo />
-          <h1 style = {styleTitle}>заголовок</h1>
+          <Heading text={'Blogget'} />
           <Search />
-          <Auth auth={false}/>
+          <Auth auth={false} />
         </div>
       </Layout>
     </header>
